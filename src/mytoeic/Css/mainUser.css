@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 31, 2018, 2:49:00 PM
+    Author     : Administrator
+*/
+
+.mainFxmlClass {
+
+}
+.greeting {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+.greetingName {
+    -fx-fill: #df0000;
+}
+.title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-fill: #474747;
+}
+.testItem {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-color: linear-gradient(#FF8008, #ffb506);
+    -fx-text-fill: #fff;
+}
+.btnMainuser {
+    -fx-background-color: #ccc;
+    -fx-font-weight: bold;
+}
+.testItem1 {
+    -fx-background-color: #86c215;
+}
+.testItem2 {
+    -fx-background-color: #9a4fbf;
+}
+.testItem3 {
+    -fx-background-color: #bf5015;
+}
+.testItem4 {
+    -fx-background-color: #1687c4;
+}

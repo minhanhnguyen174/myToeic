@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.*?>
-<?import javafx.scene.paint.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
@@ -11,22 +10,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="389.0" prefWidth="564.0" styleClass="loginContent" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytoeic.Controller.FXMLDocumentController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="392.0" prefWidth="688.0" styleClass="loginContent" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytoeic.Controller.FXMLDocumentController">
    <children>
-      <Text fill="#bf0000" layoutX="103.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="ĐĂNG NHẬP TÀI KHOẢN" textAlignment="CENTER">
+      <Text fill="#bf0000" layoutX="194.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="ĐĂNG KÝ TÀI KHOẢN" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Text>
-      <GridPane layoutX="60.0" layoutY="120.0" prefHeight="206.0" prefWidth="484.0" styleClass="form" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="100.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="190.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.0" minWidth="10.0" prefWidth="234.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
+      <GridPane layoutX="60.0" layoutY="120.0" prefHeight="206.0" prefWidth="484.0" styleClass="form" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="90.0">
          <children>
             <TextField prefHeight="40.0" prefWidth="246.0" GridPane.columnIndex="1">
                <GridPane.margin>
@@ -69,33 +60,52 @@
                   </Label>
                </children>
             </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icon/unlock.png" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="itemTitle" text="Nhập Lại Mật Khẩu">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField prefHeight="40.0" prefWidth="246.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
          </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="191.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.0" minWidth="10.0" prefWidth="234.0" />
+         </columnConstraints>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
       </GridPane>
-      <HBox alignment="CENTER" layoutX="256.0" layoutY="331.0" prefHeight="45.0" prefWidth="246.0">
+      <HBox alignment="CENTER" layoutX="532.0" layoutY="321.0" prefHeight="45.0" prefWidth="148.0">
          <children>
-            <Button mnemonicParsing="false" text="Đăng Ký">
-               <styleClass>
-                  <String fx:value="btn" />
-                  <String fx:value="btnGrey" />
-               </styleClass>
-               <padding>
-                  <Insets bottom="10.0" left="20.0" />
-               </padding>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="107.0" text="Đăng Nhập" textAlignment="CENTER">
-               <HBox.margin>
-                  <Insets left="35.0" />
-               </HBox.margin>
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="91.0" text="Đăng Ký" textAlignment="CENTER">
                <styleClass>
                   <String fx:value="btn" />
                   <String fx:value="btnRed" />
                </styleClass>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
             </Button>
          </children>
       </HBox>
