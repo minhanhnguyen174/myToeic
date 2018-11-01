@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainUser" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane layoutX="14.0" layoutY="14.0" prefHeight="372.0" prefWidth="572.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
         <columnConstraints>
@@ -34,7 +34,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" stylesheets="@../Css/mainuser.css" text="Incomplete Sentence" GridPane.rowIndex="1">
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" stylesheets="@../Css/mainUser.css" text="Incomplete Sentence" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
                      </GridPane.margin>
@@ -50,7 +50,7 @@
                         <String fx:value="testItem3" />
                      </styleClass>
                   </Button>
-                  <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" stylesheets="@../Css/mainuser.css" text="Text Completion" GridPane.columnIndex="1">
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" stylesheets="@../Css/mainUser.css" text="Text Completion" GridPane.columnIndex="1">
                      <GridPane.margin>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
                      </GridPane.margin>
@@ -66,7 +66,7 @@
                         <String fx:value="testItem2" />
                      </styleClass>
                   </Button>
-                  <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" stylesheets="@../Css/mainuser.css" text="Photo" textAlignment="CENTER">
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" stylesheets="@../Css/mainUser.css" text="Photo" textAlignment="CENTER">
                      <GridPane.margin>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
                      </GridPane.margin>
@@ -82,7 +82,7 @@
                         <String fx:value="testItem1" />
                      </styleClass>
                   </Button>
-                  <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" stylesheets="@../Css/mainuser.css" text="Question - Response" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="260.0" stylesheets="@../Css/mainUser.css" text="Question - Response" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
                      </GridPane.margin>
@@ -102,22 +102,17 @@
             </GridPane>
             <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/mainUser.css" GridPane.columnIndex="1">
                <children>
-                  <Button mnemonicParsing="false" styleClass="btnMainuser" stylesheets="@../Css/default.css" text="Xem điểm">
+                  <Button mnemonicParsing="false" styleClass="btnMainuser" stylesheets="@../Css/mainUser.css" text="User Profile">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" styleClass="btnMainuser" stylesheets="@../Css/mainuser.css" text="Đổi mật khẩu">
-                     <HBox.margin>
-                        <Insets right="10.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button mnemonicParsing="false" styleClass="btnMainuser" text="Đăng xuất" />
+                  <Button mnemonicParsing="false" styleClass="btnMainuser" text="Logout" />
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/mainuser.css">
+            <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/mainUser.css">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="greeting" text="Welcome back " />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="greeting" text="Hi! " />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Minh Anh">
                      <styleClass>
                         <String fx:value="greetingName" />
@@ -126,9 +121,9 @@
                   </Text>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/mainuser.css" GridPane.columnSpan="2" GridPane.rowIndex="1">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/mainUser.css" GridPane.columnSpan="2" GridPane.rowIndex="1">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="CHỌN LOẠI KỸ NĂNG" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="CHOOSE A SKILL" />
                </children>
             </HBox>
          </children>

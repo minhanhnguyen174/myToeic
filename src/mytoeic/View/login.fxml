@@ -13,7 +13,7 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="389.0" prefWidth="564.0" styleClass="loginContent" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytoeic.Controller.FXMLDocumentController">
    <children>
-      <Text fill="#bf0000" layoutX="103.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="ĐĂNG NHẬP TÀI KHOẢN" textAlignment="CENTER">
+      <Text fill="#3a3ac9" layoutX="103.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="ĐĂNG NHẬP TÀI KHOẢN" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
@@ -94,7 +94,7 @@
                </HBox.margin>
                <styleClass>
                   <String fx:value="btn" />
-                  <String fx:value="btnRed" />
+                  <String fx:value="btnMain" />
                </styleClass>
             </Button>
          </children>

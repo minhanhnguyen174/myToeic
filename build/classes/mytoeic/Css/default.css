@@ -13,8 +13,8 @@ and open the template in the editor.
     -fx-font-weight: bold;
     -fx-padding: 10 20 10 20; 
 }
-.btnRed {
-    -fx-background-color: #bf0000;
+.btnMain {
+    -fx-background-color: #3a3ac9;
 }
 .btnGrey {
      -fx-background-color: #7c7c7c;

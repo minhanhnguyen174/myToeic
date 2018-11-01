@@ -20,7 +20,7 @@ public class MyToeic extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root;
-        root = FXMLLoader.load(getClass().getResource("View/mainUser.fxml"));
+        root = FXMLLoader.load(getClass().getResource("View/userProfile.fxml"));
         
         Scene scene = new Scene(root);
         

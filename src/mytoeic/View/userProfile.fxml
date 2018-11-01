@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="746.0" prefWidth="570.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytoeic.Controller.userProfileController">
+   <children>
+      <GridPane layoutX="20.0" layoutY="21.0" prefHeight="702.0" prefWidth="530.0">
+         <children>
+            <Text fill="#3a3ac9" strokeType="OUTSIDE" strokeWidth="0.0" text="USER PROFILE" textAlignment="CENTER" wrappingWidth="638.427734375" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Label styleClass="userProfile-label" text="Full name" textFill="#3a3ac9" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="30.0" prefWidth="360.0" styleClass="userProfile-textField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="55.0" prefWidth="365.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Button mnemonicParsing="false" text="Change">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="userProfile-btn" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button disable="true" mnemonicParsing="false" text="Save">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="userProfile-btn" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </HBox>
+            <Label styleClass="userProfile-label" text="Password" textFill="#3a3ac9" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="30.0" prefWidth="360.0" styleClass="userProfile-textField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="userProfile-label" text="Re-Password" textFill="#3a3ac9" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="30.0" prefWidth="360.0" styleClass="userProfile-textField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Text fill="#3a3ac9" strokeType="OUTSIDE" strokeWidth="0.0" text="Activity history" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TabPane prefHeight="281.0" prefWidth="421.0" styleClass="userProfile-tabPane" stylesheets="@../Css/userProfile.css" tabClosingPolicy="UNAVAILABLE" GridPane.columnSpan="2" GridPane.rowIndex="6">
+               <tabs>
+                  <Tab styleClass="userProfile-tabLabel" text="Photo">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView prefHeight="274.0" prefWidth="530.0">
+                                 <columns>
+                                    <TableColumn prefWidth="87.0" styleClass="userProfile-tableLabel" />
+                                    <TableColumn minWidth="0.0" prefWidth="200.0" styleClass="userProfile-tableLabel" text="Date" />
+                                    <TableColumn minWidth="0.0" prefWidth="242.0" styleClass="userProfile-tableLabel" text="Score" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab styleClass="userProfile-tabLabel" text="Text Completion">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView prefHeight="274.0" prefWidth="530.0">
+                                 <columns>
+                                    <TableColumn prefWidth="87.0" styleClass="userProfile-tableLabel" />
+                                    <TableColumn minWidth="0.0" prefWidth="200.0" styleClass="userProfile-tableLabel" text="Date" />
+                                    <TableColumn minWidth="0.0" prefWidth="242.0" styleClass="userProfile-tableLabel" text="Score" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab styleClass="userProfile-tabLabel" text="Incomplete Sentence">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView prefHeight="274.0" prefWidth="530.0">
+                                 <columns>
+                                    <TableColumn prefWidth="87.0" styleClass="userProfile-tableLabel" />
+                                    <TableColumn minWidth="0.0" prefWidth="200.0" styleClass="userProfile-tableLabel" text="Date" />
+                                    <TableColumn minWidth="0.0" prefWidth="242.0" styleClass="userProfile-tableLabel" text="Score" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab styleClass="userProfile-tabLabel" text="Question - Response">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView prefHeight="274.0" prefWidth="530.0">
+                                 <columns>
+                                    <TableColumn prefWidth="87.0" styleClass="userProfile-tableLabel" />
+                                    <TableColumn minWidth="0.0" prefWidth="200.0" styleClass="userProfile-tableLabel" text="Date" />
+                                    <TableColumn minWidth="0.0" prefWidth="242.0" styleClass="userProfile-tableLabel" text="Score" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <children>
+                  <Button mnemonicParsing="false" text="Close">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btnGrey" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="0.0" prefWidth="199.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="638.0" minWidth="10.0" prefWidth="439.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="127.0" minHeight="0.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="121.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="225.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="338.0" minHeight="10.0" prefHeight="306.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </opaqueInsets>
+   <stylesheets>
+      <URL value="@../Css/userProfile.css" />
+      <URL value="@../Css/default.css" />
+   </stylesheets>
+</AnchorPane>

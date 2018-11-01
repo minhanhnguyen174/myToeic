@@ -1,0 +1,51 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.userProfile-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #434343;
+}
+
+.userProfile-textField {
+    -fx-border-color: #3a3ac9;
+    -fx-border-radius: 5px;
+}
+
+.userProfile-btn {
+    -fx-background-color: #3a3ac9;
+}
+
+.userProfile-tabPane {
+    -fx-border-color: #3a3ac9;
+    -fx-border-width: 1px;
+}
+
+.userProfile-tabLabel {
+    -fx-background-color: #7373d9;
+    -fx-padding: 5 10 5 10;
+}
+
+.userProfile-tabLabel .tab-label {
+    -fx-text-fill: #fff;
+    /*-fx-font-size: 13px;*/
+    -fx-font-weight: bold;
+}
+
+.userProfile-tabLabel:selected {
+    -fx-background-color: #3a3ac9;
+}
+
+.userProfile-tableLabel {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #3a3ac9;
+    -fx-border-width: 1 0.5 1 0.5;
+}
+
+.userProfile-tableLabel .label {
+    -fx-text-fill: #3a3ac9;
+}
