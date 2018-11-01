@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 .mainUser {
--fx-background-image: url('../Icon/mainUserbg.png');
+/*-fx-background-image: url('../Icon/mainUserbg.png');*/
     -fx-background-repeat: no-repeat;
     -fx-background-size: cover;
     -fx-background-position: center center;
@@ -38,10 +38,6 @@ and open the template in the editor.
 .testItem:hover {
     -fx-background-color: #fff;
     -fx-text-fill: #3a3ac9;
-}
-.btnMainuser {
-    -fx-background-color: #ccc;
-    -fx-font-weight: bold;
 }
 
 /*.testItem1 {

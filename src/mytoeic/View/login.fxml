@@ -11,14 +11,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="389.0" prefWidth="564.0" styleClass="loginContent" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytoeic.Controller.FXMLDocumentController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="320.0" prefWidth="564.0" styleClass="loginContent" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytoeic.Controller.FXMLDocumentController">
    <children>
-      <Text fill="#3a3ac9" layoutX="103.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="ĐĂNG NHẬP TÀI KHOẢN" textAlignment="CENTER">
+      <Text fill="#3a3ac9" layoutX="226.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="SIGN IN" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
       </Text>
-      <GridPane layoutX="60.0" layoutY="120.0" prefHeight="206.0" prefWidth="484.0" styleClass="form" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="100.0">
+      <GridPane layoutX="60.0" layoutY="73.0" prefHeight="144.0" prefWidth="444.0" styleClass="form">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="190.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.0" minWidth="10.0" prefWidth="234.0" />
@@ -45,7 +45,7 @@
                         <Image url="@../Icon/student.png" />
                      </image>
                   </ImageView>
-                  <Label alignment="CENTER_RIGHT" styleClass="itemTitle" text="Tên Người Dùng" textFill="#434343">
+                  <Label alignment="CENTER_RIGHT" styleClass="itemTitle" text="Username" textFill="#434343">
                      <font>
                         <Font name="System Bold Italic" size="12.0" />
                      </font>
@@ -62,7 +62,7 @@
                         <Image url="@../Icon/key.png" />
                      </image>
                   </ImageView>
-                  <Label styleClass="itemTitle" text="Mật Khẩu">
+                  <Label styleClass="itemTitle" text="Password">
                      <padding>
                         <Insets left="10.0" />
                      </padding>
@@ -77,9 +77,9 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
       </GridPane>
-      <HBox alignment="CENTER" layoutX="256.0" layoutY="331.0" prefHeight="45.0" prefWidth="246.0">
+      <HBox alignment="CENTER" layoutX="251.0" layoutY="234.0" prefHeight="45.0" prefWidth="246.0">
          <children>
-            <Button mnemonicParsing="false" text="Đăng Ký">
+            <Button mnemonicParsing="false" text="Sign up">
                <styleClass>
                   <String fx:value="btn" />
                   <String fx:value="btnGrey" />
@@ -88,7 +88,7 @@
                   <Insets bottom="10.0" left="20.0" />
                </padding>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="107.0" text="Đăng Nhập" textAlignment="CENTER">
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="107.0" text="Sign in" textAlignment="CENTER">
                <HBox.margin>
                   <Insets left="35.0" />
                </HBox.margin>

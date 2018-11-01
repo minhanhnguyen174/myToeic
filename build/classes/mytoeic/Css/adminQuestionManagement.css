@@ -1,0 +1,17 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.adminQuestion-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-fill: #434343;
+}
+.adminQuestion-textField {
+    -fx-border-color: #3a3ac9;
+    -fx-border-width: 1;
+    -fx-border-radius: 5px;
+}

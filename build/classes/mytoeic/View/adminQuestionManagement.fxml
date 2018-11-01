@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="890.0" prefWidth="857.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytoeic.Controller.AdminQuestionManagementController">
+   <children>
+      <SplitPane dividerPositions="0.5878378378378378" orientation="VERTICAL" prefHeight="890.0" prefWidth="857.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="561.0" prefWidth="855.0">
+               <children>
+                  <GridPane layoutX="-1.0" prefHeight="516.0" prefWidth="857.0" stylesheets="@../Css/adminQuestionManagement.css">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="319.0" minWidth="10.0" prefWidth="223.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="418.0" minWidth="10.0" prefWidth="214.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="123.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="319.0" minWidth="10.0" prefWidth="297.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="160.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="88.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="#3a3ac9" strokeType="OUTSIDE" strokeWidth="0.0" text="QUESTION MANAGEMENT" textAlignment="CENTER" wrappingWidth="858.8896484375" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                           <children>
+                              <Label styleClass="adminQuestion-label" text="C">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField prefHeight="30.0" prefWidth="180.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <Label styleClass="adminQuestion-label" text="D">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField prefHeight="30.0" prefWidth="180.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                           <children>
+                              <Label styleClass="adminQuestion-label" text="A">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField prefHeight="30.0" prefWidth="180.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Label styleClass="adminQuestion-label" text="B">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField prefHeight="30.0" prefWidth="180.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <Label styleClass="adminQuestion-label" text="Photo Path" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin></Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <children>
+                              <TextField prefHeight="39.0" prefWidth="175.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" text="Browse...">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="btn" />
+                                    <String fx:value="btnGrey" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <Label styleClass="adminQuestion-label" text="Audio Path" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin></Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <children>
+                              <TextField prefHeight="30.0" prefWidth="175.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" text="Browse...">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="btn" />
+                                    <String fx:value="btnGrey" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <Label styleClass="adminQuestion-label" text="Question ID">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin></Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="001" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <Label styleClass="adminQuestion-label" text="Paragraph Path" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin></Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                           <children>
+                              <TextField prefHeight="30.0" prefWidth="175.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" text="Browse...">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="btn" />
+                                    <String fx:value="btnGrey" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/adminQuestionManagement.css" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                           <children>
+                              <Label styleClass="adminQuestion-label" stylesheets="@../Css/adminQuestionManagement.css" text="Question">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <TextArea prefHeight="52.0" prefWidth="548.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextArea>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                           <children>
+                              <Button disable="true" mnemonicParsing="false" text="Reset">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="btn" />
+                                    <String fx:value="btnMain" />
+                                 </styleClass>
+                              </Button>
+                              <Button disable="true" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" text="Update">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="btn" />
+                                    <String fx:value="btnMain" />
+                                 </styleClass>
+                              </Button>
+                              <Button layoutX="65.0" layoutY="20.0" mnemonicParsing="false" text="Create">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="btn" />
+                                    <String fx:value="btnMain" />
+                                 </styleClass>
+                              </Button>
+                              <Button layoutX="120.0" layoutY="20.0" mnemonicParsing="false" text="Close">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="btn" />
+                                    <String fx:value="btnMain" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                           <children>
+                              <Label styleClass="adminQuestion-label" text="Correct Answer" />
+                              <ComboBox prefHeight="30.0" prefWidth="150.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="291.0" prefWidth="855.0">
+               <children>
+                  <TabPane prefHeight="363.0" prefWidth="855.0" styleClass="userProfile-tabPane" stylesheets="@../Css/userProfile.css" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab styleClass="userProfile-tabLabel" text="Photo">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="265.0" prefWidth="853.0">
+                                 <children>
+                                    <TableView prefHeight="325.0" prefWidth="857.0">
+                                       <columns>
+                                          <TableColumn prefWidth="56.0" styleClass="userProfile-tableLabel" text="ID" />
+                                          <TableColumn minWidth="0.0" prefWidth="184.0" styleClass="userProfile-tableLabel" text="Question" />
+                                          <TableColumn minWidth="0.0" prefWidth="88.0" styleClass="userProfile-tableLabel" text="A" />
+                                          <TableColumn minWidth="0.0" prefWidth="92.0" styleClass="userProfile-tableLabel" text="B" />
+                                          <TableColumn minWidth="0.0" prefWidth="93.0" styleClass="userProfile-tableLabel" text="C" />
+                                          <TableColumn minWidth="0.0" prefWidth="90.0" styleClass="userProfile-tableLabel" text="D" />
+                                          <TableColumn minWidth="0.0" prefWidth="94.0" styleClass="userProfile-tableLabel" text="Correct Answer" />
+                                          <TableColumn minWidth="0.0" prefWidth="78.0" styleClass="userProfile-tableLabel" text="Image Path" />
+                                          <TableColumn minWidth="0.0" prefWidth="81.0" styleClass="userProfile-tableLabel" text="Audio Path" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab styleClass="userProfile-tabLabel" text="Text Completion">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView prefHeight="325.0" prefWidth="855.0">
+                                       <columns>
+                                          <TableColumn prefWidth="56.0" styleClass="userProfile-tableLabel" text="ID" />
+                                          <TableColumn minWidth="0.0" prefWidth="177.0" styleClass="userProfile-tableLabel" text="Question" />
+                                          <TableColumn minWidth="0.0" prefWidth="99.0" styleClass="userProfile-tableLabel" text="A" />
+                                          <TableColumn minWidth="0.0" prefWidth="106.0" styleClass="userProfile-tableLabel" text="B" />
+                                          <TableColumn minWidth="0.0" prefWidth="104.0" styleClass="userProfile-tableLabel" text="C" />
+                                          <TableColumn minWidth="0.0" prefWidth="100.0" styleClass="userProfile-tableLabel" text="D" />
+                                          <TableColumn minWidth="0.0" prefWidth="108.0" styleClass="userProfile-tableLabel" text="Correct Answer" />
+                                          <TableColumn minWidth="0.0" prefWidth="104.0" styleClass="userProfile-tableLabel" text="Paragraph Path" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab styleClass="userProfile-tabLabel" text="Incomplete Sentence">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView prefHeight="325.0" prefWidth="855.0">
+                                       <columns>
+                                          <TableColumn prefWidth="56.0" styleClass="userProfile-tableLabel" text="ID" />
+                                          <TableColumn minWidth="0.0" prefWidth="299.0" styleClass="userProfile-tableLabel" text="Question" />
+                                          <TableColumn minWidth="0.0" prefWidth="93.0" styleClass="userProfile-tableLabel" text="A" />
+                                          <TableColumn minWidth="0.0" prefWidth="97.0" styleClass="userProfile-tableLabel" text="B" />
+                                          <TableColumn minWidth="0.0" prefWidth="97.0" styleClass="userProfile-tableLabel" text="C" />
+                                          <TableColumn minWidth="0.0" prefWidth="99.0" styleClass="userProfile-tableLabel" text="D" />
+                                          <TableColumn minWidth="0.0" prefWidth="113.0" styleClass="userProfile-tableLabel" text="Correct Answer" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab styleClass="userProfile-tabLabel" text="Question - Response">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="293.0" prefWidth="853.0">
+                                 <children>
+                                    <TableView prefHeight="325.0" prefWidth="855.0">
+                                       <columns>
+                                          <TableColumn prefWidth="56.0" styleClass="userProfile-tableLabel" text="ID" />
+                                          <TableColumn minWidth="0.0" prefWidth="177.0" styleClass="userProfile-tableLabel" text="Question" />
+                                          <TableColumn minWidth="0.0" prefWidth="99.0" styleClass="userProfile-tableLabel" text="A" />
+                                          <TableColumn minWidth="0.0" prefWidth="106.0" styleClass="userProfile-tableLabel" text="B" />
+                                          <TableColumn minWidth="0.0" prefWidth="104.0" styleClass="userProfile-tableLabel" text="C" />
+                                          <TableColumn minWidth="0.0" prefWidth="100.0" styleClass="userProfile-tableLabel" text="D" />
+                                          <TableColumn minWidth="0.0" prefWidth="108.0" styleClass="userProfile-tableLabel" text="Correct Answer" />
+                                          <TableColumn minWidth="0.0" prefWidth="104.0" styleClass="userProfile-tableLabel" text="Audio Path" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+   <stylesheets>
+      <URL value="@../Css/adminQuestionManagement.css" />
+      <URL value="@../Css/default.css" />
+   </stylesheets>
+</AnchorPane>

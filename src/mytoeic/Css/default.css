@@ -19,8 +19,17 @@ and open the template in the editor.
 .btnGrey {
      -fx-background-color: #7c7c7c;
 }
+.btnWhite {
+     -fx-background-color: #fff;
+     -fx-text-fill: #474747;
+     -fx-font-weight: bold;
+     -fx-padding: 5 10 5 10; 
+}
 TextField {
     -fx-font-size: 16;
     -fx-text-fill: #7c7c7c;
     -fx-font-weight: bold;
+}
+AnchorPane {
+    -fx-background-color: #fff;
 }

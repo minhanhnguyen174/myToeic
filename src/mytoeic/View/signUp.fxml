@@ -12,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="392.0" prefWidth="688.0" styleClass="loginContent" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytoeic.Controller.FXMLDocumentController">
    <children>
-      <Text fill="#3a3ac9" layoutX="194.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="ĐĂNG KÝ TÀI KHOẢN" textAlignment="CENTER">
+      <Text fill="#3a3ac9" layoutX="300.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="SIGN UP" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
@@ -36,7 +36,7 @@
                         <Image url="@../Icon/student.png" />
                      </image>
                   </ImageView>
-                  <Label alignment="CENTER_RIGHT" styleClass="itemTitle" text="Tên Người Dùng" textFill="#434343">
+                  <Label alignment="CENTER_RIGHT" styleClass="itemTitle" text="Username" textFill="#434343">
                      <font>
                         <Font name="System Bold Italic" size="12.0" />
                      </font>
@@ -53,7 +53,7 @@
                         <Image url="@../Icon/key.png" />
                      </image>
                   </ImageView>
-                  <Label styleClass="itemTitle" text="Mật Khẩu">
+                  <Label styleClass="itemTitle" text="Enter Password">
                      <padding>
                         <Insets left="10.0" />
                      </padding>
@@ -67,7 +67,7 @@
                         <Image url="@../Icon/unlock.png" />
                      </image>
                   </ImageView>
-                  <Label styleClass="itemTitle" text="Nhập Lại Mật Khẩu">
+                  <Label styleClass="itemTitle" text="Re-enter Password">
                      <padding>
                         <Insets left="10.0" />
                      </padding>
@@ -98,7 +98,7 @@
       </GridPane>
       <HBox alignment="CENTER" layoutX="532.0" layoutY="321.0" prefHeight="45.0" prefWidth="148.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="91.0" text="Đăng Ký" textAlignment="CENTER">
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="91.0" text="Sign up" textAlignment="CENTER">
                <HBox.margin>
                   <Insets />
                </HBox.margin>

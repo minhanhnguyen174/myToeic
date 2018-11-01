@@ -102,12 +102,12 @@
             </GridPane>
             <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/mainUser.css" GridPane.columnIndex="1">
                <children>
-                  <Button mnemonicParsing="false" styleClass="btnMainuser" stylesheets="@../Css/mainUser.css" text="User Profile">
+                  <Button mnemonicParsing="false" styleClass="btnWhite" stylesheets="@../Css/mainUser.css" text="User Profile">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" styleClass="btnMainuser" text="Logout" />
+                  <Button mnemonicParsing="false" styleClass="btnWhite" text="Logout" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/mainUser.css">

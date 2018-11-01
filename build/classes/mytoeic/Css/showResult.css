@@ -7,4 +7,6 @@ and open the template in the editor.
     Created on : Oct 31, 2018, 3:33:49 PM
     Author     : Administrator
 */
-
+.showResult {
+   -fx-background-color: #3a3ac9;
+}
