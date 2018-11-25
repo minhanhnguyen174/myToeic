@@ -200,14 +200,14 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </HBox>
-                        <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/adminQuestionManagement.css" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                        <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/adminQuestionManagement.css" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1">
                            <children>
                               <Label styleClass="adminQuestion-label" stylesheets="@../Css/adminQuestionManagement.css" text="Question">
                                  <HBox.margin>
                                     <Insets />
                                  </HBox.margin>
                               </Label>
-                              <TextArea prefHeight="52.0" prefWidth="548.0" styleClass="adminQuestion-textField">
+                              <TextArea prefHeight="63.0" prefWidth="335.0" styleClass="adminQuestion-textField">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
@@ -261,6 +261,19 @@
                            <children>
                               <Label styleClass="adminQuestion-label" text="Correct Answer" />
                               <ComboBox prefHeight="30.0" prefWidth="150.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Label styleClass="adminQuestion-label" text="Type" />
+                              <ComboBox fx:id="cbCategory" prefWidth="150.0" styleClass="adminQuestion-textField">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>

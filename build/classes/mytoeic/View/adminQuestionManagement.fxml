@@ -9,13 +9,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="890.0" prefWidth="857.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytoeic.Controller.AdminQuestionManagementController">
+<AnchorPane id="AnchorPane" prefHeight="904.0" prefWidth="885.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytoeic.Controller.AdminQuestionManagementController">
    <children>
-      <SplitPane dividerPositions="0.5878378378378378" orientation="VERTICAL" prefHeight="890.0" prefWidth="857.0">
+      <SplitPane dividerPositions="0.5878378378378378" orientation="VERTICAL" prefHeight="904.0" prefWidth="899.0" style="-fx-background-color: #fff;">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="561.0" prefWidth="855.0">
                <children>
-                  <GridPane layoutX="-1.0" prefHeight="516.0" prefWidth="857.0" stylesheets="@../Css/adminQuestionManagement.css">
+                  <GridPane layoutX="-1.0" prefHeight="505.0" prefWidth="857.0" stylesheets="@../Css/adminQuestionManagement.css">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="319.0" minWidth="10.0" prefWidth="223.0" />
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="418.0" minWidth="10.0" prefWidth="214.0" />
@@ -200,14 +200,14 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </HBox>
-                        <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/adminQuestionManagement.css" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                        <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/adminQuestionManagement.css" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1">
                            <children>
                               <Label styleClass="adminQuestion-label" stylesheets="@../Css/adminQuestionManagement.css" text="Question">
                                  <HBox.margin>
                                     <Insets />
                                  </HBox.margin>
                               </Label>
-                              <TextArea prefHeight="52.0" prefWidth="548.0" styleClass="adminQuestion-textField">
+                              <TextArea prefHeight="63.0" prefWidth="335.0" styleClass="adminQuestion-textField">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
@@ -270,11 +270,24 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Label styleClass="adminQuestion-label" text="Type" />
+                              <ComboBox fx:id="cbCategory" prefWidth="150.0" styleClass="adminQuestion-textField">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
                      </children>
                   </GridPane>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="291.0" prefWidth="855.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="352.0" prefWidth="817.0">
                <children>
                   <TabPane prefHeight="363.0" prefWidth="855.0" styleClass="userProfile-tabPane" stylesheets="@../Css/userProfile.css" tabClosingPolicy="UNAVAILABLE">
                      <tabs>
@@ -282,7 +295,7 @@
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="265.0" prefWidth="853.0">
                                  <children>
-                                    <TableView prefHeight="325.0" prefWidth="857.0">
+                                    <TableView prefHeight="327.0" prefWidth="857.0">
                                        <columns>
                                           <TableColumn prefWidth="56.0" styleClass="userProfile-tableLabel" text="ID" />
                                           <TableColumn minWidth="0.0" prefWidth="184.0" styleClass="userProfile-tableLabel" text="Question" />
@@ -363,6 +376,9 @@
                </children>
             </AnchorPane>
         </items>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
       </SplitPane>
    </children>
    <stylesheets>

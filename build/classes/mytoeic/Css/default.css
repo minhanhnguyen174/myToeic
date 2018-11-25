@@ -33,3 +33,13 @@ TextField {
 AnchorPane {
     -fx-background-color: #fff;
 }
+.answer {
+    -fx-font-size: 18;
+    -fx-text-fill: #3a3ac9;
+    -fx-font-weight: bold;
+}
+.question-title {
+    -fx-font-size: 24;
+    -fx-fill: #3a3ac9;
+    -fx-font-weight: bold;
+}

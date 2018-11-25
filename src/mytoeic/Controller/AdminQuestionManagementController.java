@@ -7,7 +7,10 @@ package mytoeic.Controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
+import mytoeic.Model.Category;
 
 /**
  * FXML Controller class
@@ -19,9 +22,12 @@ public class AdminQuestionManagementController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    
+    @FXML private ComboBox<Category> cbCategories;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+        
+    }
+
 }
